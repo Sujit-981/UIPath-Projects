@@ -1,0 +1,33 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "NumsArr&Sequence_1",
+        "dt_States&Sequence_1",
+        "states&Sequence_1",
+        "states&Sequence_8",
+        "dt_States&Sequence_8",
+        "NumsArr&Sequence_8",
+        "arr_state&Sequence_9",
+        "CaptchaValue&Sequence_1",
+        "operator_value&Sequence_1",
+        "nums&Sequence_1",
+        "CaptchaText&Sequence_1",
+        "arr_state&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

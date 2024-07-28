@@ -1,0 +1,54 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "BookingDateTime&Sequence_12",
+        "BuyerName&Sequence_12",
+        "SellerName&Sequence_12",
+        "Index&Sequence_1",
+        "TransactionNumber&Sequence_12",
+        "BuyerIndex&Sequence_9",
+        "SellerIndex&Sequence_9",
+        "BuyerMobileNumber&Sequence_9",
+        "SellerMobileNumber&Sequence_9",
+        "dt_NewInputTable&Sequence_1",
+        "dt_OldInputTable&Sequence_1",
+        "BuyerMobileNumber&Sequence_3",
+        "SellerMobileNumber&Sequence_3",
+        "dt_WebTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SendingEmail.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Sqft",
+        "in_PlotNumber",
+        "in_DateAndTimeOfBooking",
+        "in_BookingNumber",
+        "in_BuyerNumber",
+        "in_SellerNumber",
+        "in_BuyerEmail",
+        "in_BuyerName",
+        "in_SellerEmail",
+        "in_SellerName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

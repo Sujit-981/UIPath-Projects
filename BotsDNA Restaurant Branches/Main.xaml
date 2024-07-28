@@ -1,0 +1,428 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="943,4142" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="784,4077" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_UnmodifiedTable" />
+      <Variable x:TypeArguments="x:Int32" Name="LastIndex" />
+      <Variable x:TypeArguments="x:Int32" Name="FirstIndex" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_ModifiedTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: explorer.exe" sap:VirtualizedContainerService.HintSize="722,1609" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="7628c01d-32d5-4d6d-8772-85f1991195a9" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1360" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="dt_Header" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:BuildDataTable DataTable="[dt_Header]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Restaurant_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;General_x0020_Manager_x0028_GM_x0029_&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;GM-Phone_x0020_Number&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Branch_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_Header]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="450,148" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Sheet1" WorkbookPath="ExtractedInfo.xlsx" />
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="450,980" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[{&quot;1&quot;,&quot;2&quot;,&quot;3&quot;}]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,834" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Name="dt_ExtractedTable" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7628c01d-32d5-4d6d-8772-85f1991195a9" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://botsdna.com/RestaurantBranches/" CVScreenId="08221e43-eb9a-4103-b485-cd28461408ac" CvElementArea="667, 341, 342, 23" CvType="InputBox" DesignTimeRectangle="953, 343, 8, 17" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='A' aaname='{0}' /&gt;&quot;, currentText)]" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='1' check:innerText='1' /&gt;" Guid="904f2c76-24de-4f73-962d-92d5b8d67da2" InformativeScreenshot="e5f5d21018325fa5a12e69a547bf2bf6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='botsdna.com/RestaurantBranches/' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_ExtractedTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Restaurant Name' ReferenceIdx='0' Name='Restaurant Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='General Manager(GM)' ReferenceIdx='1' Name='General Manager(GM)'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='GM-Phone Number' ReferenceIdx='2' Name='GM-Phone Number'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='GM-Phone Number Url' ReferenceIdx='3' Name='GM-Phone Number Url' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Branch Name' ReferenceIdx='4' Name='Branch Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Branch Name Url' ReferenceIdx='5' Name='Branch Name Url' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Restaurant Name' attr='fulltext' /&gt;&lt;column name='General Manager(GM)' attr='fulltext' /&gt;&lt;column name='GM-Phone Number' attr='fulltext' name2='GM-Phone Number Url' attr2='href' /&gt;&lt;column name='Branch Name' attr='fulltext' name2='Branch Name Url' attr2='href' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NExtractData_4" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="7628c01d-32d5-4d6d-8772-85f1991195a9" Version="V3">
+                      <uix:NExtractData.Target>
+                        <uix:TargetAnchorable BrowserURL="https://botsdna.com/RestaurantBranches/3.html" DesignTimeRectangle="330, 389, 705, 726" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="4aadf0b8-68a9-4eaf-9b02-a165fbd923c5" InformativeScreenshot="465f0089c106d864f413c5d1f279a572.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='botsdna.com/RestaurantBranches/3.html' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NExtractData.Target>
+                    </uix:NExtractData>
+                    <ui:FilterDataTable DataTable="[dt_ExtractedTable]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="354,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dt_ExtractedTable]" SelectColumnsMode="Remove">
+                      <ui:FilterDataTable.Filters>
+                        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                          <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTSTARTSWITH">
+                            <ui:FilterOperationArgument.Column>
+                              <InArgument x:TypeArguments="x:String">["Restaurant Name"]</InArgument>
+                            </ui:FilterOperationArgument.Column>
+                            <ui:FilterOperationArgument.Operand>
+                              <InArgument x:TypeArguments="x:String">["Current Page"]</InArgument>
+                            </ui:FilterOperationArgument.Operand>
+                          </ui:FilterOperationArgument>
+                        </scg:List>
+                      </ui:FilterDataTable.Filters>
+                      <ui:FilterDataTable.SelectColumns>
+                        <scg:List x:TypeArguments="InArgument" Capacity="4">
+                          <x:Null />
+                        </scg:List>
+                      </ui:FilterDataTable.SelectColumns>
+                    </ui:FilterDataTable>
+                    <ui:AppendRange DataTable="[dt_ExtractedTable]" DisplayName="Append Range Workbook" sap:VirtualizedContainerService.HintSize="354,139" sap2010:WorkflowViewState.IdRef="AppendRange_2" SheetName="Sheet1" WorkbookPath="ExtractedInfo.xlsx" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,50" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="542,1194" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NForEachUiElement DelayBetweenPages="5" DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='a' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="480,1106" sap2010:WorkflowViewState.IdRef="NForEachUiElement_4" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="7628c01d-32d5-4d6d-8772-85f1991195a9" Version="V3">
+                    <uix:NForEachUiElement.Body>
+                      <ActivityAction x:TypeArguments="x:Int32">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,818" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="sd:DataTable" Name="dt_ExtractedTable" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="354,205" sap2010:WorkflowViewState.IdRef="NClick_9" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="802fd562-db2c-485d-897b-95d1987003ad" WaitForReadyArgument="Complete" />
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_ExtractedTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Restaurant Name' ReferenceIdx='0' Name='Restaurant Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='General Manager(GM)' ReferenceIdx='1' Name='General Manager(GM)'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='GM-Phone Number' ReferenceIdx='2' Name='GM-Phone Number'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='GM-Phone Number Url' ReferenceIdx='3' Name='GM-Phone Number Url' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Branch Name' ReferenceIdx='4' Name='Branch Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Branch Name Url' ReferenceIdx='5' Name='Branch Name Url' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Restaurant Name' attr='fulltext' /&gt;&lt;column name='General Manager(GM)' attr='fulltext' /&gt;&lt;column name='GM-Phone Number' attr='fulltext' name2='GM-Phone Number Url' attr2='href' /&gt;&lt;column name='Branch Name' attr='fulltext' name2='Branch Name Url' attr2='href' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="7628c01d-32d5-4d6d-8772-85f1991195a9" Version="V3">
+                            <uix:NExtractData.Target>
+                              <uix:TargetAnchorable BrowserURL="https://botsdna.com/RestaurantBranches/3.html" DesignTimeRectangle="330, 389, 705, 726" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="4aadf0b8-68a9-4eaf-9b02-a165fbd923c5" InformativeScreenshot="465f0089c106d864f413c5d1f279a572.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='botsdna.com/RestaurantBranches/3.html' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                            </uix:NExtractData.Target>
+                          </uix:NExtractData>
+                          <ui:FilterDataTable DataTable="[dt_ExtractedTable]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="354,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dt_ExtractedTable]" SelectColumnsMode="Remove">
+                            <ui:FilterDataTable.Filters>
+                              <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTSTARTSWITH">
+                                  <ui:FilterOperationArgument.Column>
+                                    <InArgument x:TypeArguments="x:String">["Restaurant Name"]</InArgument>
+                                  </ui:FilterOperationArgument.Column>
+                                  <ui:FilterOperationArgument.Operand>
+                                    <InArgument x:TypeArguments="x:String">["Current Page"]</InArgument>
+                                  </ui:FilterOperationArgument.Operand>
+                                </ui:FilterOperationArgument>
+                              </scg:List>
+                            </ui:FilterDataTable.Filters>
+                            <ui:FilterDataTable.SelectColumns>
+                              <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                <x:Null />
+                              </scg:List>
+                            </ui:FilterDataTable.SelectColumns>
+                          </ui:FilterDataTable>
+                          <ui:AppendRange DataTable="[dt_ExtractedTable]" DisplayName="Append Range Workbook" sap:VirtualizedContainerService.HintSize="354,141" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="Sheet1" WorkbookPath="ExtractedInfo.xlsx" />
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NForEachUiElement.Body>
+                    <uix:NForEachUiElement.Target>
+                      <uix:TargetAnchorable BrowserURL="https://botsdna.com/RestaurantBranches/index.html" DesignTimeRectangle="668, 393, 339, 22" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='1' tag='TD' /&gt;" Guid="bbbc39d4-0267-479d-a02e-f09c7ebdea1e" InformativeScreenshot="3e1ffebd719b731ed2f5858c82134fdc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='botsdna.com/RestaurantBranches/index.html' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                    </uix:NForEachUiElement.Target>
+                    <uix:NForEachUiElement.Variables>
+                      <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
+                      <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
+                    </uix:NForEachUiElement.Variables>
+                    <uix:NForEachUiElement.VariablesMetadata>
+                      <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
+                        <uuam:VariableMetadata Name="CurrentElement" Type="ui:UiElement" />
+                        <uuam:VariableMetadata Name="CurrentElement_Label" Type="x:String" />
+                      </scg:List>
+                    </uix:NForEachUiElement.VariablesMetadata>
+                  </uix:NForEachUiElement>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA+wSURBVGhDvZcLdFXVmcfPfd/cvAPkBsjj5v1+E0II5EGAhGdiixarJBldM8pUxzW1rrFWjF0tS4tgIgKpvBG14zOoHeuMQJwKzPBQZNZyYCwYqCEQMblJBA3ccL75f3ufc3NuRMVquxf/9X372/vm/L69v73PQfk+WqjVErE0Jqr5V2lxrdtykzuOTM/rOjmzwNs7awr1ziqhkxWF3sNlOV0dRemdv0qNa62dENEQ67R77IoSPkExNa6yWHe12BwnDlgdQ0Nm69Bxk/n4WpO5I0NRlpkxR3vM99sY+o449z0dBWmdOqi0Br9a70udry4WOlmeT62x0eojdufV5RYbtdldNNPhomCzhX5ks9PdULTJRIrZRD9WzF/EKqa2MEVxa4/+bo3B7/NMavnTzPz+3upiVYBVFQVaBofYGmOs13OT1cs2G7VazBQE+DyrncptDmpEAvjzfqXarDQBCf0cutdspixFGaxXFPz7Du0+z0SA66XBQLyio3AiVlmk6it9Dv65ykLR76ksok2eydRhstBZk5nutQdRnNkqgU0S2qSYyAJrUcw0zmIlG+8C+qFIIpJ/YzKpixTlQcRM0PU3rtc9U7KP8moKMeAYq4MKWwVbVaSJ5xTTgUwPHQPQVcCqKI1becUtFgGMOicT4qCSiQhws/AtSMqJecuQsBsJL8ACRCrK3wmw62k3ucc3fTgj3+sHBJQA9IMaYTVhtXnFeyoK1Z6KAvVCXiqpALoMoB6Uw9uAn+NwUhhqHY8QK89WAbiEl4lgoUVy7CdbbVRitdJh/D5TMV1xKcocxL++/SwhpkWH1cH01WU4aQukxRiPC3jEeioLNVtEn4yLpD4k0A8gQincbndSEM5BsiMI50ArI6M4CUMivDMWnJd8lNIu7EYyxu4zmXdh7KvbvfExLcbV1WHkymp+BSBhz87UgNlHjCXG2J+WA3AbeZHARYD0ogweCXKRAzDBgIm3OygGh1gvH6NsOOguzHOibOKcQTQBB34cdiIU/dtMZnW8okzEvC+3m9zjmnoElKEctL4E1QA1K6ELOBHpz8hXdXsuOU4k0IfV5xI6ZHXQbGcIpQAajxJKcwSTHTvDvhklwoeaE8pwuije5iQPkhxvt2PzTLQM5VeKXSvCLiQoyp3MG9D4wB4vy+0XgIBmCAY1rqqEBqwAlbZb90USBdQNyzofFqZ+KhKw0CBW/CcAmIASwqP89Z2IAxqGEuGysYgETORAPBOrrmiJ8SFn2+gMpuexC6cw503F9CZige1gaVZXwCoyEPsakNEKvzxP1WH9msHKF/a8xUGfKnYkYKNLgFzC8IC0avAmlEm0w0ERHEeCVkgcZMzxIFkzSkjME/NNmGejT3H4kRn+rjIgoPX20zh3i38VWQbwQECGM4iTGBP7WLPnTE66oCVwEeegG6tXoN0+4gpFaeQ77PT3WO1w3DIWJGSGSjDnzqBgcsFy6fBu2WHLkOgASmgE/UuKaViSo9nHuzyP/XPV6GoC6mNIJOAHGvV5TFhd03PV7rpyGtzSTsPvHSZfz1ni1msPo0+QAJfRZyijP1kAi9snFJA2rKKC22g1oAh13oSrlVfejkQOOBEDfA6SMGFX+LPiLvh9mHsZv7sK9Rl3wHNn0faK7Q303vwS/+oFAmrA5XmadB+rvKROQF+rfRKfpiVgx2G20iBfpzjAd6OWTahvO0A9gFqCA+vCylq4ZJBEOhL7IeY4XC6yIKFo9A+ijx+RTyRgpg8U5YSAt49zeYqe+wEVQ8t/PdcP9mesaiC01J91leWo3rbf0NWhIQ1Xth6vSr9//zJt6hym96f/gHoVB8rIgRXjUjKjBOx0C24exemgINS/E3DipcZnA7BWfjcguWTcQG5XMFkxJwe783+Yw6Xjw9/gHXhFMcl3QVRFfHPBs/Vq4bMNVPTsDfTGjaUaYK4q7HRduQKa/TOwA5s3aMiyvX70Mt25/SKVtAzQ1IcHhf117So6rzixCzh84jay0RB24hi+QIvxPjAhiSh8uKWGhIpzYVQmdiU2CGWFBB5FIpdRRlw+V6ARJIE7VF6jGSurjxY8U68yPCfSuKpOwmrQZ6YxNKyuslzqb3tUw+YVv0p3bJPgUx4eoBJoCvvQDf94GDsQBHEZWcU7gS3fIs9jVS3BwRSJF1RFdhYtWbqEaufW0KIFdXTjzTdRpTuGwjEnOigUZ8KF7yi8yQEuZSIPKl+UT/7OxWo+Eih8poEKILbr7ihXz0zLVrHSApj901q/u2GuqpcNwy9qHfIDs4ofGhX330iehwT4NuIdsNMALJ+FAZOdbgJYbmgoZeBc5BcW0PI7bqNbb11K6QkJVIRdeiw4hM4gwUGU1F6TlVbBbkWp9VaEUUSwOUIJK3bXF+ysp7Eq37KYPqjIVU+XMjgnkUNsT5dmqZ/9fpeA5/YPWz8DqNcggAO6yBBrWH6IPraE+m8jL26jfk4A+hwwr+Jw5oSEBZSPDSoAfC/eHQjQRYBvxAFvhp5w2OhcRyo1zgtvVib9OLs1/+nFJFUvLCeQ9/Qi9dG7Z/qhu0qzqWtaNnXfMFdDJ3oNNc+g15ZMQtf9izaIw8xJ8G2kJ4GLnLrwbnDjJrLgMPMh5muUX2o5uG4v4duJDy6Xz14kuxQJnHhwEvkOZNCaf4puU5LvL+vM27GYcncsUo1J5O5YqHL84JwCEvCa+h5/RMMnWrBmkApXeEcF0ID+GK2peEAkwQdZJsG7oNAngE3Be4ChbVaI731oKkprWCSAQ4sdeBX+9tsnkG9/uurbn0EvPxK7S8lcXdOVt2MRXUu52xeqN6+sUbtKMtWPoK6pWfTFu4cE/IlzI1QAKBbD6f7Xq5+W3/gcnbFHiSS8AOPDOIz6n+LCdw9W3ok3swM7oeCToTokhPAtIXZga7CV3l81GfCpgE9VR/an0amXEruUnO0L1LztAIZyhRYKn+Psc+y1+kKRwEdIQD+8e//3CuUDSOhBzUIMKq0xZox7afbd/0NvpMwX74OX8CFXhVJhcAtWnd8BNn4XQOG4YrdDankIDb/sId++FNW3L1XYkf0pdOEPiV4ld9tCytkGWNivUs3aOvpoSoZ6qjhdFfRo7Xu/oDyA69JhA2LX8EWyml/R9G/krn6AskprKS09nUJRMiEuM6XF2WleWbC64rZxtHd9LDGsb1+SOrIvmUb2pYi+8GGV7G3z1RxABmoB5WyF4Gdvna9mQW23T6NTxRn+BDbs+dwPZ1Tu1/THjukx/lt6Y9BRWF1JUvuTeZx87yRiB2DhK5nrar1ZW+ep2QwMsc82e8t80ed41pZ56tT2OjpWnoWPtG7xoF3vDVPuL/op5xd9wjKIsEZ/jNXn5nDMEN+DchTNNyigGNb3jgeJJKKfqCUAHzFhpS9iSsqqqi6GZGUC1A8Oq4vjrPvvKafPjxwUzzqLFxgDSUm4a2vs2JfnHu8ZEX9THfgvATUCOAYcVbzKsdF4vMo6+cLkLiX2J0UdWZvnY5UlbNbmeQF+5uY6lSXimHfkpY3iYdyaNw9SNgCyASXtt9fc1QPaXyO6euqXgEsAaKAAS74/xgGaBV/r717r7lRilma1SjgJK5LR+qyMTbVIgG2dylraWq89jqjj3cuU9UAfZQFECD5Didg3SJ/X8e6w9teIRg6VATAWq82AbGMZmmFFX1pNiK+5K7xNCS+b3MyQAnRTHbFEMpt0yZiU7B/sOaY9kqhp0xBlAkQXQ2U+8Kkf1DgWOKcPvx3U/grKp/dFHVTTZABPgtjiJhIx7sN/R2rxDGe9YgmyRgi4jXWUvnGuSCJD+EgK1iiO8Zya3zXR0OWL4sHd/Vdp9iovZQCawTN+Lu2o3+eP8Rw9NvsxL3XjHHEbGr6I1S9lWAn6nxOFz3bEaIXwGSHGJ6oetwUfpGhx95Z0Zmys1UBrKf2puYBH/yk9JuOir8VWHmgXD+fGSTRiNRnuS9ISMGoZ5vJv9DbwIWpfQDFcjCr0x4kcM/RjkMREJCjj724ef1TAc4uoib8nHWC60n47Rx3tzw2Ii7HfytiTR3ZqCLK9cmSYZv2mn9IAmQ7pVteyjQP0iqHmub18bAv1d3J5+IENcgPa2JcagZbVOps0fEUxO60RKa3V3lTAsQSgBsk2TROPsTXGeCe4BIzt+NkReuuDy7T2rUv05O5LSOyLgBXnNjT8Ga3c304vvpYJqGheZVi35rsByb6uaPSjyff2BJXFY/7y0VvUwqQWHSqtHbDts9W09jnwIcRStH7KBlitn6qNVz5zi/ryiX/X0L65/ffZ96ly5y1q5eYKwAJM19vjAQj5+/jyhDR4aBwnQFv+JXSbhj3aeBeSVlf162CpGyC2wp8d0Gdof5/HtH7Vzltp5b52Afjx0HkNl4TPsbWHnqbirQ3yt/jd6bdwq/jBxsOyDH4n+wFjQvFuc+Dq6y1yQVILVlg8IHlDjeoHF1aX7Cev53GxI36f4ynrpTimWzlujM1S73uuCDBRKAcGi2JQCdkZqfmsqECLsYeanS0a7rVb3P2lR3UIXTp8yvoaTcbxsX1jTJ9fQ0nrZgl49ovaq+j0f+AwalACsJMhoxCT1tcZoYpYZyT6EOzJ34V9pGF+dbNGOT2Jj1V4k9fVkC5+qNEyjLTVqg7GVqpajOka209eN4taX8gAXCRgGSxCvdIZjj4rQouFq2yv7A0TMdaF18O8nq8qnbEtdGpMc+KT1SpLf6gU/CdhWegnwY7OkWPc98dh2Tf+bsZT5RrUKJz0wzXgcPL5bagKX9j6cluDhnd9LWpe0sP88GspcW2VH9IfX1v9pXm6PJjPv2G98Ao+lRlMB+wMA7i0EjYE0KGclBT8FY2OhzWsb9ci5nlaBBgkIaRl6WCeJ+Cv5aSqhfzjWl+3rKVbpgggo0Y6GTYw5tsbrIr43hB6qMn29Yf2m5orZ3xD/KMzvAD1gyQ+UU0JT1QCvlJlX48lYg7HWdzn3xj7p9/EoQQcgwUqGHIhHkxX9gSpPujCay5vY621WcP4bs0a6fTEPlTaJQDbAN6mWfQFJPyEtgpIjvnlH69Qf7ojR8IJUBcxpACXMWn3BLGlwxudRz1u0/Ud2G/TwusSWnSweEB52ioFaHwr+9LqfkKrHGOVr5+G1cftwqASVpPTD+3b41AvvGr3rmi0/mX1fr2Nd2PczenbGJQhjYpbM1MkENc6U4zBF/FNz+O/gQAEMENL7Xb4/Quv2vpXNFpaIoJNEdpj/vqNEwkpiWme+LPiowwugB+v8EvGKmj6umkMPyoG321XIdr9uK3zrh9a7vmbgl+rcTJ82CMaklonLM/tnPTg1C5OInb1DPVfX5yMFbZ6P3zW2vXSL60dq5dbWpfVmpq+H2hF+X9hB7yJPqvhkgAAAABJRU5ErkJggg==" InformativeScreenshot="a21c3e04b65659d8af93179ac9e21c44.jpg" Selector="&lt;html app='chrome.exe' title='botsdna.com/RestaurantBranches/index.html' /&gt;" Title="botsdna.com/RestaurantBranches/index.html" Url="https://botsdna.com/RestaurantBranches/index.html" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_UnmodifiedTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="722,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Sheet1" WorkbookPath="ExtractedInfo.xlsx" />
+    <ui:BuildDataTable DataTable="[dt_ModifiedTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="722,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_5" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Restaurant_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;General_x0020_Manager_x0028_GM_x0029_&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;GM-Phone_x0020_Number&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Branch_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;10000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <Assign sap:VirtualizedContainerService.HintSize="722,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[FirstIndex]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[LastIndex]" DataTable="[dt_UnmodifiedTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="722,1915" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="688,1719" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If Condition="[LastIndex = 0]" sap:VirtualizedContainerService.HintSize="626,57" sap2010:WorkflowViewState.IdRef="If_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Continue sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[CurrentRow(2).Equals(dt_UnmodifiedTable.Rows(LastIndex - 1)(2))]" sap:VirtualizedContainerService.HintSize="626,1408" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="592,1135" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="TempAddress" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="530,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[TempAddress]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[FirstIndex&lt;LastIndex]" DisplayName="While" sap:VirtualizedContainerService.HintSize="530,453" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                    <ui:InterruptibleWhile.Body>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,307" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[TempAddress]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[TempAddress+", "+dt_UnmodifiedTable.Rows(FirstIndex)(3).ToString()]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[FirstIndex]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[FirstIndex+1]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </ui:InterruptibleWhile.Body>
+                  </ui:InterruptibleWhile>
+                  <ui:TextToLeftRight TextToLeft="{x:Null}" CustomSeparatorEnabled="False" DisplayName="Text to Left/Right" FullText="[TempAddress]" sap:VirtualizedContainerService.HintSize="530,271" sap2010:WorkflowViewState.IdRef="TextToLeftRight_1" Separator="," SeparatorKey="Comma" TextToRight="[TempAddress]" />
+                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{dt_UnmodifiedTable.Rows(LastIndex-1)(0), dt_UnmodifiedTable.Rows(LastIndex-1)(1), dt_UnmodifiedTable.Rows(LastIndex-1)(2), TempAddress}]" DataTable="[dt_ModifiedTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="530,209" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="626,166" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[LastIndex]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_ModifiedTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="722,139" sap2010:WorkflowViewState.IdRef="WriteRange_4" SheetName="Sheet2" WorkbookPath="ExtractedInfo.xlsx" />
+  </Sequence>
+</Activity>

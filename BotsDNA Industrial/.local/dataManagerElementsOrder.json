@@ -1,0 +1,36 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "SelectorIdVariable&Sequence_6",
+        "ExtractedDataTable&Sequence_1",
+        "Temporary&Sequence_13",
+        "ExtractDataTableOvens&Sequence_9",
+        "ExtractDataTableBelts&Sequence_9",
+        "Extract&Sequence_9",
+        "ExtractDataTableTanks&Sequence_9",
+        "ExtractDataTableTanks&Sequence_8",
+        "Extract&Sequence_8",
+        "ExtractDataTableBelts&Sequence_8",
+        "ExtractDataTableBelts&Sequence_7",
+        "TempBelt&Sequence_6",
+        "TempPlant&Sequence_5",
+        "BeltsDropdown&Sequence_2",
+        "PlantsDropdown&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

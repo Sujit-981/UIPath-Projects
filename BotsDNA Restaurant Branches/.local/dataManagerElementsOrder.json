@@ -1,0 +1,30 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_ExtractedTable&Sequence_17",
+        "TempAddress&Sequence_11",
+        "dt_ModifiedTable&Sequence_1",
+        "LastIndex&Sequence_1",
+        "FirstIndex&Sequence_1",
+        "dt_UnmodifiedTable&Sequence_1",
+        "dt_Header&Sequence_4",
+        "dt_ExtractedTable&Sequence_8",
+        "dt_ExtractedTable&Sequence_8"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

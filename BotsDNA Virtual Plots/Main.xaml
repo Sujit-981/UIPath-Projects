@@ -1,0 +1,590 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="943,6578" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uast="clr-namespace:UiPath.Activities.System.Text;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="704,6513" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_OldInputTable" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dt_WebTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_NewInputTable" />
+      <Variable x:TypeArguments="x:Int32" Name="Index" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="To get the websites data table for comparision" AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="642,552" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="a72a3a12-f5b2-4761-9223-47b2101734da" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,272" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_WebTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-1' ReferenceIdx='1' Name='Column-1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-2' ReferenceIdx='2' Name='Column-2'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-3' ReferenceIdx='3' Name='Column-3'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='Column-1' attr='fulltext' /&gt;&lt;column name='Column-2' attr='fulltext' /&gt;&lt;column name='Column-3' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="a72a3a12-f5b2-4761-9223-47b2101734da" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://botsdna.com/vitrualplots/" DesignTimeRectangle="283, 353, 799, 668" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="ebdaa797-00d3-4fee-945a-e9fafdf2ecc6" InformativeScreenshot="e532bd95c276c4bd914dc117ad7f6525.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='botsdna.com/vitrualplots/' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="e123954b96f20ffd3fcb19bf781f9101.jpg" Selector="&lt;html app='chrome.exe' title='botsdna.com/vitrualplots/' /&gt;" Title="botsdna.com/vitrualplots/" Url="https://botsdna.com/vitrualplots/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_OldInputTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="642,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="InputFolder\SellerBuyer.xlsx" />
+    <ui:BuildDataTable sap2010:Annotation.AnnotationText="To store updated values of mobile numbers" DataTable="[dt_NewInputTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="642,123" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Seller_x0020_Mobile&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;10&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Seller_x0020_Email&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Buyer_x0020_Mobile&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;10&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Buyer_x0020_Email&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Plot_x0020_No&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;2&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Sqft&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;3&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Transaction_x0020_Number&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;12&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;      &lt;xs:unique name=&quot;Constraint1&quot;&gt;&#xA;        &lt;xs:selector xpath=&quot;.//TableName&quot; /&gt;&#xA;        &lt;xs:field xpath=&quot;Seller_x0020_Mobile&quot; /&gt;&#xA;      &lt;/xs:unique&gt;&#xA;      &lt;xs:unique name=&quot;Constraint2&quot;&gt;&#xA;        &lt;xs:selector xpath=&quot;.//TableName&quot; /&gt;&#xA;        &lt;xs:field xpath=&quot;Buyer_x0020_Mobile&quot; /&gt;&#xA;      &lt;/xs:unique&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:BuildDataTable>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Adding updated mobile numbers and data to the new datatable dt_NewInputTable&#xA;" DataTable="[dt_OldInputTable]" DisplayName="For Each Row in Data Table " sap:VirtualizedContainerService.HintSize="642,1487" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,1249" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="SellerMobileNumber" />
+              <Variable x:TypeArguments="x:String" Name="BuyerMobileNumber" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Matches BuilderPattern="(\d-?){10}$" DisplayName="Find Matching Patterns" FirstMatch="[SellerMobileNumber]" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[CurrentRow(0).ToString()]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(\\d-?){10}$&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(\d-?){10}$" RegexOption="IgnoreCase, Compiled" />
+            <If Condition="[SellerMobileNumber.Contains(&quot;-&quot;c)]" DisplayName="If mobile number contains &quot;-&quot;" sap:VirtualizedContainerService.HintSize="450,220" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uast:FindAndReplace DisplayName="Find and Replace" sap:VirtualizedContainerService.HintSize="354,265" sap2010:WorkflowViewState.IdRef="FindAndReplace_1" MatchCase="False" Result="[SellerMobileNumber]" Source="[SellerMobileNumber]" ValueToFind="-">
+                    <uast:FindAndReplace.ReplaceWith>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </uast:FindAndReplace.ReplaceWith>
+                  </uast:FindAndReplace>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:Matches BuilderPattern="(\d-?){10}$" DisplayName="Find Matching Patterns" FirstMatch="[BuyerMobileNumber]" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Matches_3" Input="[CurrentRow(2).ToString()]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(\\d-?){10}$&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(\d-?){10}$" RegexOption="IgnoreCase, Compiled" />
+            <If Condition="[BuyerMobileNumber.Contains(&quot;-&quot;c)]" DisplayName="If mobile number contains &quot;-&quot;" sap:VirtualizedContainerService.HintSize="450,548" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,353" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uast:FindAndReplace DisplayName="Find and Replace" sap:VirtualizedContainerService.HintSize="354,265" sap2010:WorkflowViewState.IdRef="FindAndReplace_2" MatchCase="False" Result="[BuyerMobileNumber]" Source="[BuyerMobileNumber]" ValueToFind="-">
+                    <uast:FindAndReplace.ReplaceWith>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </uast:FindAndReplace.ReplaceWith>
+                  </uast:FindAndReplace>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{SellerMobileNumber, CurrentRow(1), BuyerMobileNumber, CurrentRow(3), CurrentRow(4), CurrentRow(5)}]" DataTable="[dt_NewInputTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="450,209" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[Index]" DataTable="[dt_NewInputTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="642,4004" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="608,3808" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="SellerMobileNumber" />
+              <Variable x:TypeArguments="x:String" Name="BuyerMobileNumber" />
+              <Variable x:TypeArguments="x:Int32" Name="SellerIndex" />
+              <Variable x:TypeArguments="x:Int32" Name="BuyerIndex" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="546,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[SellerMobileNumber]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString()]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[SellerIndex]" DataTable="[dt_WebTable]" DisplayName="For Each Row in Data Table - To search seller number" sap:VirtualizedContainerService.HintSize="546,495" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,299" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[CurrentRow(3).Equals(SellerMobileNumber)]" sap:VirtualizedContainerService.HintSize="450,211" sap2010:WorkflowViewState.IdRef="If_3">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:Break sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Break_1" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+            <Assign DisplayName="Assign - To match the table's phone number in website" sap:VirtualizedContainerService.HintSize="546,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[SellerIndex]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[SellerIndex+1]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="546,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[BuyerMobileNumber]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[CurrentRow(2).ToString()]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[BuyerIndex]" DataTable="[dt_WebTable]" DisplayName="For Each Row in Data Table - To search buyer number" sap:VirtualizedContainerService.HintSize="546,57" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,299" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[CurrentRow(3).Equals(BuyerMobileNumber)]" sap:VirtualizedContainerService.HintSize="450,211" sap2010:WorkflowViewState.IdRef="If_4">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:Break sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Break_2" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+            <Assign DisplayName="Assign - To match the table's phone number in website" sap:VirtualizedContainerService.HintSize="546,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[BuyerIndex]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[BuyerIndex+1]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: botsdna.com/vitrualplots/" sap:VirtualizedContainerService.HintSize="546,2548" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="bffb31c9-74bd-48f1-9334-57455f10f08f" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2299" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="TransactionNumber" />
+                      <Variable x:TypeArguments="x:String" Name="SellerName" />
+                      <Variable x:TypeArguments="x:String" Name="BuyerName" />
+                      <Variable x:TypeArguments="x:String" Name="BookingDateTime" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NCheck Action="Check" DisplayName="Check seller number" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NCheck_2" ScopeIdentifier="bffb31c9-74bd-48f1-9334-57455f10f08f" Version="V3">
+                      <uix:NCheck.Target>
+                        <uix:TargetAnchorable BrowserURL="https://botsdna.com/vitrualplots/" CVScreenId="475f5505-34f4-4bd3-af05-95aaa6a13b86" DesignTimeRectangle="415, 402, 13, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='seller' tableRow='{0}' tag='INPUT' /&gt;&quot;, SellerIndex)]" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='seller' type='radio' tag='INPUT' class='' aaname='' /&gt;" Guid="8c9ac533-e74b-49ea-a604-86526d875f4e" ImageBase64="" InformativeScreenshot="ebc651a4ccc25516151b1d1d8f1d9db6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='botsdna.com/vitrualplots/' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NCheck.Target>
+                    </uix:NCheck>
+                    <uix:NGetText DisplayName="Get Text 'Seller Name'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="bffb31c9-74bd-48f1-9334-57455f10f08f" TextString="[SellerName]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://botsdna.com/vitrualplots/" CVScreenId="a6426448-7001-4442-a111-b9803538a9c9" CvTextArea="524, 310, 99, 15" CvType="AnyWordGroup" DesignTimeRectangle="516, 301, 354, 35" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='{0}' tag='TD' /&gt;&quot;, SellerIndex)]" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' class='' /&gt;" Guid="ada8c8a4-6b11-4f47-930b-6f506b63bb61" ImageBase64="" InformativeScreenshot="ed024763f9e9a39ec80c1d27d3f2a91a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='botsdna.com/vitrualplots/' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NCheck Action="Check" DisplayName="Check buyer number" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NCheck_3" ScopeIdentifier="bffb31c9-74bd-48f1-9334-57455f10f08f" Version="V3">
+                      <uix:NCheck.Target>
+                        <uix:TargetAnchorable BrowserURL="https://botsdna.com/vitrualplots/" CVScreenId="475f5505-34f4-4bd3-af05-95aaa6a13b86" DesignTimeRectangle="298, 402, 13, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='{0}' tag='INPUT' /&gt;&quot;, BuyerIndex)]" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='radio' tag='INPUT' class='' aaname='' /&gt;" Guid="53abd7b4-fbab-44d0-a3c2-67396bf4287f" ImageBase64="" InformativeScreenshot="a729a939d6800ccbc483b1ef0a33da28.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='botsdna.com/vitrualplots/' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NCheck.Target>
+                    </uix:NCheck>
+                    <uix:NGetText DisplayName="Get Text 'Buyer Name'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="bffb31c9-74bd-48f1-9334-57455f10f08f" TextString="[BuyerName]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://botsdna.com/vitrualplots/" CVScreenId="a6426448-7001-4442-a111-b9803538a9c9" CvTextArea="524, 310, 99, 15" CvType="AnyWordGroup" DesignTimeRectangle="516, 301, 354, 35" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='{0}' tag='TD' /&gt;&quot;, BuyerIndex)]" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' class='' /&gt;" Guid="8216451e-1468-4e48-9c05-666dd3be3dd7" ImageBase64="" InformativeScreenshot="ed024763f9e9a39ec80c1d27d3f2a91a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='botsdna.com/vitrualplots/' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Plot No'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="bffb31c9-74bd-48f1-9334-57455f10f08f" Text="[CurrentRow(&quot;Plot No&quot;).ToString()]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://botsdna.com/vitrualplots/" CVScreenId="5fd6f6ab-e9fc-4fad-837c-51c2efdfc725" CvElementArea="519, 361, 179, 24" CvType="InputBox" DesignTimeRectangle="521, 362, 177, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="920d6b5d-cad3-4d15-8c72-d3756e5dcb94" InformativeScreenshot="d715d7b9c7a275ce8efcc040af7c05ba.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='botsdna.com/vitrualplots/' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="5fd6f6ab-e9fc-4fad-837c-51c2efdfc725" CvTextArea="291, 363, 61, 15" CvTextArgument="Plot No :" CvType="Text" DesignTimeRectangle="283, 353, 230, 38" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname=' Plot No :' check:innerText='Plot No :' /&gt;" Guid="16ed27a9-7281-48cf-b975-3900f7d742de" SearchSteps="Selector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Sqft'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="bffb31c9-74bd-48f1-9334-57455f10f08f" Text="[CurrentRow(&quot;Sqft&quot;).ToString()]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://botsdna.com/vitrualplots/" CVScreenId="45d5fb85-15ab-42fa-882c-0db3ab03b90d" CvElementArea="519, 399, 180, 24" CvType="InputBox" DesignTimeRectangle="521, 400, 177, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="52fcbc8b-1db9-4920-891a-c29b104ae602" InformativeScreenshot="52556e4454aa545f28bbfae93fd6c8ef.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='botsdna.com/vitrualplots/' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="45d5fb85-15ab-42fa-882c-0db3ab03b90d" CvTextArea="290, 401, 39, 18" CvTextArgument="Sqft :" CvType="Text" DesignTimeRectangle="283, 391, 230, 38" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname=' Sqft :' check:innerText='Sqft :' /&gt;" Guid="6144a9a4-4a00-4f30-a9c7-0a6ba42273cd" SearchSteps="Selector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bffb31c9-74bd-48f1-9334-57455f10f08f" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://botsdna.com/vitrualplots/" CVScreenId="45d5fb85-15ab-42fa-882c-0db3ab03b90d" CvElementArea="519, 436, 61, 25" CvTextArea="528, 441, 44, 13" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="521, 438, 58, 21" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='button' tag='INPUT' class='' aaname='Submit' check:text='Submit' /&gt;" Guid="9e690089-8498-45cb-bd8f-76f2b27b438c" InformativeScreenshot="2725dfd74a24522a57bfef7502214943.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='botsdna.com/vitrualplots/' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text 'Booking Number'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="bffb31c9-74bd-48f1-9334-57455f10f08f" TextString="[TransactionNumber]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://botsdna.com/vitrualplots/Thanks.html" CVScreenId="0d683b1d-549e-48b4-a3c0-83f9cf02a91b" CvTextArea="619, 608, 128, 26" CvType="AnyWordGroup" DesignTimeRectangle="16, 603, 1333, 37" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='TransNo' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TransNo' tag='P' type='' class='' /&gt;" Guid="80c0f767-5138-470e-8c3d-6cbc68b4d14e" ImageBase64="" InformativeScreenshot="8a8e0b93989e4fdf9c11365a9384fe49.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='botsdna.com/vitrualplots/Thanks.html' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="0d683b1d-549e-48b4-a3c0-83f9cf02a91b" CvTextArea="563, 539, 239, 33" CvTextArgument="Booking Number" CvType="Text" DesignTimeRectangle="562, 538, 240, 34" ElementType="Text" Guid="f7b24f8c-02a8-47ed-9110-49addd3f2815" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_9">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[BookingDateTime]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_7">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow("Seller Email")]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Object">[SellerName.ToLower()+"@gmail.com"]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_8">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow("Buyer Email")]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Object">[BuyerName.ToLower()+"@gmail.com"]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Object">[CurrentRow("Transaction Number")]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Object">[TransactionNumber]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendingEmail - Invoke Workflow File (SendingEmail.xaml)" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="SendingEmail.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_SellerName">[SellerName]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_SellerEmail">[CurrentRow(1).ToString()]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_BuyerName">[BuyerName]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_BuyerEmail">[CurrentRow(3).ToString()]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_SellerNumber">[CurrentRow(0).ToString()]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_BuyerNumber">[CurrentRow(2).ToString()]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_BookingNumber">[TransactionNumber]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_DateAndTimeOfBooking">[BookingDateTime]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_PlotNumber">[CurrentRow(4).ToString()]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_Sqft">[CurrentRow(5).ToString()]</InArgument>
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="e123954b96f20ffd3fcb19bf781f9101.jpg" Selector="&lt;html app='chrome.exe' title='botsdna.com/vitrualplots/' /&gt;" Title="botsdna.com/vitrualplots/" Url="https://botsdna.com/vitrualplots/" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="546,164" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Completed &quot;+Index.ToString()+&quot; number of iterations&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_NewInputTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="642,139" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="UpdatedSheet" WorkbookPath="InputFolder\SellerBuyer.xlsx" />
+  </Sequence>
+</Activity>

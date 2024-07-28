@@ -1,0 +1,264 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="943,1697" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="688,1632" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_ExtractedDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="626,521" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="f5834bff-6da5-4f36-bb68-357bbb11aa71" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,272" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='CustomerName' ReferenceIdx='0' Name='CustomerName'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='South Africa' ReferenceIdx='1' Name='South Africa'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Spain' ReferenceIdx='2' Name='Spain'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='SriLanka' ReferenceIdx='3' Name='SriLanka'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Swizerland' ReferenceIdx='4' Name='Swizerland'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='United Kingdom' ReferenceIdx='5' Name='United Kingdom'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='CustomerName' attr='fulltext' /&gt;&lt;column name='South Africa' attr='fulltext' /&gt;&lt;column name='Spain' attr='fulltext' /&gt;&lt;column name='SriLanka' attr='fulltext' /&gt;&lt;column name='Swizerland' attr='fulltext' /&gt;&lt;column name='United Kingdom' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NExtractData_4" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f5834bff-6da5-4f36-bb68-357bbb11aa71" Version="V3">
+              <uix:NExtractData.DataTable>
+                <InOutArgument x:TypeArguments="sd:DataTable">
+                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">dt_ExtractedDataTable</CSharpReference>
+                </InOutArgument>
+              </uix:NExtractData.DataTable>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://botsdna.com/locator/" DesignTimeRectangle="277, 350, 811, 1128" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' aaname='CustomerName *' class='ng-scope' visibleinnertext='CustomerName*' /&gt;" Guid="26e06df2-a535-4de6-a40f-d00974233c8c" InformativeScreenshot="3f90994e24e6e4240ef6855c5f90076a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='botsdna.com/locator/' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="294f5e8a8594d4a9e689058e59251fc9.jpg" Selector="&lt;html app='chrome.exe' title='botsdna.com/locator/' /&gt;" Title="botsdna.com/locator/" Url="https://botsdna.com/locator/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:ForEach x:TypeArguments="sd:DataColumn" CurrentIndex="{x:Null}" DisplayName="For Each CountryColumn" sap:VirtualizedContainerService.HintSize="626,1023" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="sd:DataColumn">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataColumn" Name="CountryColumn" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592,886" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If sap:VirtualizedContainerService.HintSize="530,798" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Condition>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">!(CountryColumn.ColumnName == dt_ExtractedDataTable.Columns[0].ColumnName)</CSharpValue>
+                </InArgument>
+              </If.Condition>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,534" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="sd:DataTable" Name="dt_EachFilteredDataTable" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:FilterDataTable DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="434,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" SelectColumnsMode="Keep">
+                    <ui:FilterDataTable.DataTable>
+                      <InArgument x:TypeArguments="sd:DataTable">
+                        <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">dt_ExtractedDataTable</CSharpValue>
+                      </InArgument>
+                    </ui:FilterDataTable.DataTable>
+                    <ui:FilterDataTable.Filters>
+                      <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                        <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
+                          <ui:FilterOperationArgument.Column>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">CountryColumn.ColumnName</CSharpValue>
+                            </InArgument>
+                          </ui:FilterOperationArgument.Column>
+                          <ui:FilterOperationArgument.Operand>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">"0"</CSharpValue>
+                            </InArgument>
+                          </ui:FilterOperationArgument.Operand>
+                        </ui:FilterOperationArgument>
+                      </scg:List>
+                    </ui:FilterDataTable.Filters>
+                    <ui:FilterDataTable.OutputDataTable>
+                      <OutArgument x:TypeArguments="sd:DataTable">
+                        <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">dt_EachFilteredDataTable</CSharpReference>
+                      </OutArgument>
+                    </ui:FilterDataTable.OutputDataTable>
+                    <ui:FilterDataTable.SelectColumns>
+                      <scg:List x:TypeArguments="InArgument" Capacity="4">
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">dt_ExtractedDataTable.Columns[0].ColumnName</CSharpValue>
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">CountryColumn.ColumnName</CSharpValue>
+                        </InArgument>
+                      </scg:List>
+                    </ui:FilterDataTable.SelectColumns>
+                  </ui:FilterDataTable>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">dt_EachFilteredDataTable.Columns[1].ColumnName</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">Number of locations</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="434,139" sap2010:WorkflowViewState.IdRef="WriteRange_1" WorkbookPath="LocatorOutput.xlsx">
+                    <ui:WriteRange.DataTable>
+                      <InArgument x:TypeArguments="sd:DataTable">
+                        <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">dt_EachFilteredDataTable</CSharpValue>
+                      </InArgument>
+                    </ui:WriteRange.DataTable>
+                    <ui:WriteRange.SheetName>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">CountryColumn.ColumnName</CSharpValue>
+                      </InArgument>
+                    </ui:WriteRange.SheetName>
+                  </ui:WriteRange>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+      <ui:ForEach.Values>
+        <InArgument x:TypeArguments="sc:IEnumerable">
+          <CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">dt_ExtractedDataTable.Columns</CSharpValue>
+        </InArgument>
+      </ui:ForEach.Values>
+    </ui:ForEach>
+  </Sequence>
+</Activity>

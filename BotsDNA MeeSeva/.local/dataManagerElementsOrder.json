@@ -1,0 +1,83 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Index&Sequence_32",
+        "TableColumn&Sequence_32",
+        "TableRow&Sequence_32"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "../../../AppData/Local/Programs/UiPath/Studio/Snippets/Windows/SnippetsCSharp/Snippets/Delay/Delay 1 Second.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "../../../AppData/Local/Programs/UiPath/Studio/Snippets/Windows/SnippetsCSharp/Snippets/Delay/Delay 300 Milliseconds.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "../../../AppData/Local/Programs/UiPath/Studio/Snippets/Windows/SnippetsCSharp/Samples/Advanced/Filter Collection Using LINQ.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "names&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "../../../AppData/Local/Programs/UiPath/Studio/Snippets/Windows/SnippetsCSharp/Samples/Text/Quick String Manipulation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "../../../AppData/Local/Programs/UiPath/Studio/Snippets/Windows/SnippetsCSharp/Samples/Calculator Automation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "winFolder&Sequence_5",
+        "resultValue&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ModifyPhoneNumber.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "List&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_PhoneNumber"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
