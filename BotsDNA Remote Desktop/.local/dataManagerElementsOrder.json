@@ -12,8 +12,14 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "dt_EachFilteredDataTable&Sequence_9",
-        "dt_ExtractedDataTable&Sequence_1"
+        "TodayDate&Sequence_3",
+        "LastRunDate&Sequence_3",
+        "SelectorIndex&Sequence_2",
+        "DecryptedPassword&Sequence_2",
+        "DecryptionKey&Sequence_2",
+        "EncryptedPassword&Sequence_2",
+        "UserId&Sequence_2",
+        "IPAddress&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
